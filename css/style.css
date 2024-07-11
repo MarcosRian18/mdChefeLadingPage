@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+  font-size: 64px;
+}
+span {
+  color: red;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #373737;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+
+nav img{
+    width: 15px;
+}
+
+header nav a {
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 20px;
+}
+img {
+  width: 50px;
+}
+
+.redes-sociais {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .redes-sociais li {
+    margin: 0 10px;
+  }
+
+ 
+  .marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F0B20D;
+    color: rgb(0, 0, 0);
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .marquee h2 {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+    font-size: 1.2rem;
+    font-family: "Aleo", serif;
+    line-height: 40px;
+  }
+  
+  .marquee img {
+    vertical-align: middle;
+  }
+
+  main{
+    width: 100%;
+    height: calc(100vh - 145px);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../imgs/tijs-van-leur-WiTisob-9dw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+.contentLeft{
+  position: relative;
+  color: rgb(255, 255, 255);
+  height: 650px;
+  width: 700px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.contentLeft h1{
+  margin-top: 80px;
+  color: white;
+  text-align: center;
+  font-size: 5.4rem;
+}
+.contentLeft h3{
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+.topItem {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  margin-top: 30px;
+}
+
+
+.topItem .item {
+  text-align: center;
+}
+
+
+.topItem img {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.lineRed {
+  margin: 0 auto;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  position: relative;
+  width: 300px;
+  height: 4px;
+  background-color: red;
+}
+
+
+section button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border-style: none;
+  background-color: #F0B20D;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+.contentRight{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  right: 0px;
+  bottom: -67px;
+  color: rgb(255, 255, 255);
+  height: 650px;
+  width: 700px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pentagon{
+  rotate: 50deg;
+  position: absolute;
+  top: -150px;
+  left: 200px;
+  width: 200px;
+}
+
+.mdImg{
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  justify-content: center;
+  align-self: center;
+  width: 500px;
+}
+
+
+.sobreMd{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+.title{
+  position: relative;
+  top: 30px;
+  font-size: 2.4rem;
+  color: white;
+  text-align: center;
+}
+
+.sobreMd h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+.sobreMd section h2{
+  color: red;
+}
+.sobreMd h3{
+  color: white;
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: -30px;
+}
+
+.lineRedSobre {
+  margin: 25px auto;
+  width: 80px;
+  height: 4px;
+  background-color: red;
+}
+
+.sections-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.contentLeftSobre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgAlbum {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 520px;
+  height: 400px;
+}
+
+.imgAlbum img {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 25px;
+  border: 3px solid red;
+  background-color: rgb(155, 7, 7);
+  transition: transform 0.3s ease;
+}
+
+.imgAlbum .imgLeft {
+  left: -60px;
+  top: 100px;
+  rotate: -20deg;
+  z-index: 1;
+  transform: scale(0.8);
+}
+
+.imgAlbum .imgCenter {
+  z-index: 2; 
+  border: 3px solid white;
+  background-position: center;
+}
+
+.imgAlbum .imgRight {
+  right: -60px;
+  top: 100px;
+  z-index: 1; 
+  rotate: 20deg;
+  transform: scale(0.8); 
+}
+
+.sobreMd section {
+  padding: 40px;
+  width: 720px;
+  height: 720px;
+}
+
+.contentRightSobre h1{
+  margin-top: -20px;
+  text-align: center;
+  font-size: 7rem;
+  color: white;
+}
+
+.contentRightSobre p{
+  font-family: "Aleo", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+  font-size: 1.3rem;
+  text-indent: 50px;
+}
+
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
